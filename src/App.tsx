@@ -4,6 +4,7 @@ import './App.css'
 import MenuAppBar from './Components/AppBar'
 import Caroucsell from './Components/Carousel'
 import Tabs from './Components/SlideNav'
+import NavBar from './Components/Navigation'
 
 function App() {
 
@@ -11,7 +12,9 @@ function App() {
     <>
     <MenuAppBar/>
     <Caroucsell/>
-   <Tabs/>
+   {/* <Tabs/> */}
+
+    <NavBar/>
     </>
   )
 }
