@@ -5,6 +5,7 @@ import MenuAppBar from './Components/AppBar'
 import Caroucsell from './Components/Carousel'
 import Tabs from './Components/SlideNav'
 import NavBar from './Components/Navigation'
+import Bodyy from './Components/Body'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
    {/* <Tabs/> */}
 
     <NavBar/>
+    <Bodyy/>
     </>
   )
 }
