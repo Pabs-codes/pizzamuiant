@@ -24,7 +24,8 @@ import RightArrow from './CategoriesICONS/Rightarrow.svg'
 
 interface Category {
   name: string;
-  icon: React.FC<React.SVGProps<SVGSVGElement>>; 
+  // icon: React.FC<React.SVGProps<SVGSVGElement>>; 
+  icon:string;
 }
 
 

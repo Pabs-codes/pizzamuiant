@@ -3,9 +3,8 @@ import 'react'
 import './App.css'
 import MenuAppBar from './Components/AppBar'
 import Caroucsell from './Components/Carousel'
-import Tabs from './Components/SlideNav'
 import NavBar from './Components/Navigation'
-import Bodyy from './Components/Body'
+import BodyTwo from './Components/BodyTwo'
 
 function App() {
 
@@ -13,10 +12,10 @@ function App() {
     <>
     <MenuAppBar/>
     <Caroucsell/>
-   {/* <Tabs/> */}
+  
 
     <NavBar/>
-    <Bodyy/>
+    <BodyTwo/>
     </>
   )
 }

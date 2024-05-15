@@ -1,12 +1,13 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import bg1 from './1.svg';
-import bg2 from './2.svg';
-import bg3 from './3.svg';
-import bg4 from './4.svg';
-import bg5 from './5.svg';
-import bg6 from './6.svg';
-import bg7 from './7.svg';
+import bg1 from './CarouselSVGs/1.svg';
+import bg2 from './CarouselSVGs/2.svg';
+import bg3 from './CarouselSVGs/3.svg';
+import bg4 from './CarouselSVGs/4.svg';
+import bg5 from './CarouselSVGs/5.svg';
+import bg6 from './CarouselSVGs/6.svg';
+import bg7 from './CarouselSVGs/7.svg';
+
 
 
 const Caroucsell: React.FC = () => (

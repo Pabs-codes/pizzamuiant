@@ -1,0 +1,124 @@
+.body-container {
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    color: black;
+  }
+  
+  .left-panel {
+
+    flex: 1;
+    padding-left: 220px;
+    padding-right: 30px;
+  }
+  
+  .right-panel {
+    width: 700px;
+    position: relative;
+    background-color: blanchedalmond;
+  
+  }
+
+  .right-card{
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+   
+  }
+  
+  /* ShoppingCartStyles.css */
+.shopping-cart {
+    font-family: Arial, sans-serif;
+    width: 350px;
+  }
+  
+  .cart-header {
+    background-color:#fefefe; /* Yellow */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(216, 26, 26);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+  }
+
+  .second{
+    background-color:#d32c2c;
+    color: white;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    padding: 0;
+  }
+  
+  .header-icon {
+    margin-right: 10px;
+  }
+  
+  .header-title h2 {
+    margin: 0;
+  }
+  
+  .branch-info {
+    background-color:#d32c2c; /* Red */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .coupon-section,
+  .total-section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .redeem-button{
+    background-color: #ded1cc;
+  }
+  .checkout-button {
+    background-color:#d32c2c;/* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .checkout-button {
+    width: 100%;
+  }
+  
+  
+  .menu-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 690px;
+  }
+
+  .menu-itemTop {
+    margin-bottom: 20px;
+    width: fit-content;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .menu-item h3 {
+    margin: 0 0 10px;
+  }
+  
+  .menu-item p {
+    margin: 5px 0;
+  }
+
+  .delclass {
+    text-align: left;
+    color: #d32c2c
+  }
