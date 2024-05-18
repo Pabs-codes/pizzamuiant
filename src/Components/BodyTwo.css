@@ -1,124 +1,184 @@
 .body-container {
-    display: flex;
-    flex-direction: row;
-    background-color: blanchedalmond;
-    color: black;
-  }
-  
-  .left-panel {
+  display: flex;
+  flex-direction: row;
+  background-color: blanchedalmond;
+  color: black;
+}
 
-    flex: 1;
-    padding-left: 220px;
-    padding-right: 30px;
-  }
-  
-  .right-panel {
-    width: 700px;
-    position: relative;
-    background-color: blanchedalmond;
-  
-  }
+.left-panel {
+  flex: 1;
+  padding-left: 220px;
+  padding-right: 30px;
+}
 
-  .right-card{
-    margin-right: 40px;
-    margin-top: 30px;
-    margin-left: 10px;
-   
-  }
-  
-  /* ShoppingCartStyles.css */
+.right-panel {
+  width: 700px;
+  position: sticky;
+  background-color: blanchedalmond;
+}
+
+.right-card {
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/* ShoppingCartStyles.css */
 .shopping-cart {
-    font-family: Arial, sans-serif;
-    width: 350px;
-  }
+  font-family: Arial, sans-serif;
+  width: 350px;
+ 
   
-  .cart-header {
-    background-color:#fefefe; /* Yellow */
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    color: rgb(216, 26, 26);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0;
-  }
+}
 
-  .second{
-    background-color:#d32c2c;
-    color: white;
-    margin-top: -15px;
-    margin-bottom: -15px;
-    padding: 0;
-  }
+.sticky-cart {
+  position: fixed;
+  top: 10px; 
+  right: 210px;  
+  width: 300px; 
   
-  .header-icon {
-    margin-right: 10px;
-  }
-  
-  .header-title h2 {
-    margin: 0;
-  }
-  
-  .branch-info {
-    background-color:#d32c2c; /* Red */
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .coupon-section,
-  .total-section {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .redeem-button{
-    background-color: #ded1cc;
-  }
-  .checkout-button {
-    background-color:#d32c2c;/* Red */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .checkout-button {
-    width: 100%;
-  }
-  
-  
-  .menu-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 690px;
-  }
+}
 
-  .menu-itemTop {
-    margin-bottom: 20px;
-    width: fit-content;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .menu-item h3 {
-    margin: 0 0 10px;
-  }
-  
-  .menu-item p {
-    margin: 5px 0;
-  }
+.cart-header {
+  background-color: #fefefe; /* Yellow */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(216, 26, 26);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+}
 
-  .delclass {
-    text-align: left;
-    color: #d32c2c
-  }
+.second {
+  background-color: #d32c2c;
+  color: white;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  padding: 0;
+}
+
+.header-icon {
+  margin-right: 10px;
+}
+
+.header-title h2 {
+  margin: 0;
+}
+
+.branch-info {
+  background-color: #d32c2c; /* Red */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon-section,
+.total-section {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.redeem-button {
+  background-color: #ded1cc;
+}
+
+.checkout-button {
+  background-color: #d32c2c; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-items {
+  background-color: white;
+  color: red;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d32c2c;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cart-item span {
+  flex: 1;
+}
+
+.cart-item button {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 690px;
+}
+
+.menu-itemTop {
+  margin-bottom: 20px;
+  width: fit-content;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.menu-item h3 {
+  margin: 0 0 10px;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}
+
+.menu-item button {
+  background-color: #D40033;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.delclass {
+  text-align: left;
+  color: #d32c2c;
+}
+
+
+.quantity-button {
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Transparent background for hover effects */
+  color: red;
+  cursor: pointer; /* Indicate clickable behavior */
+  padding: 5px 10px; /* Adjust padding for desired button size */
+  border-radius: 4px; /* Rounded corners for a cleaner look */
+  font-size: 16px; /* Adjust font size for readability */
+}
+
+.quantity-button:hover { /* Hover effect for visual feedback */
+  background-color: rgba(255, 0, 0, 0.2); /* Slightly transparent red */
+}
+
+.remove { /* Optional styling for the remove button icon */
+  font-size: 20px; /* Adjust icon size as needed */
+}

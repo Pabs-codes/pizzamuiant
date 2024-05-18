@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './NavBar.css';
 import ACTIONS from './CategoriesICONS/pizzaboy_navigation_Aktion.svg'; 
 import SAVINGS from './CategoriesICONS/i_sparmenues.svg'; 
@@ -28,8 +28,13 @@ interface Category {
   icon:string;
 }
 
+interface NavBarProps {
+  activeIndex: number;
+  setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const NavBar: React.FC = () => {
+
+const NavBar: React.FC<NavBarProps> = ({activeIndex, setActiveIndex}) => {
   const categories: Category[] = [
     { name: 'ACTIONS', icon: ACTIONS }, 
     { name: 'SAVINGS MENUS', icon: SAVINGS }, 
@@ -51,7 +56,7 @@ const NavBar: React.FC = () => {
   ];
 
   const navRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  
 
   const scroll = (direction: 'left' | 'right') => {
     if (navRef.current) {
