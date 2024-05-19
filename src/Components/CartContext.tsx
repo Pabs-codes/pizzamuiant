@@ -15,9 +15,13 @@ interface CartContextType {
   decreaseQuantity: (index: number) => void;
 }
 
+interface CartProviderProps {
+  children: React.ReactNode;
+}
+
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-export const CartProvider: React.FC = ({ children }) => {
+export const CartProvider: React.FC<CartProviderProps> = ({ children }:CartProviderProps) => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
   const addToCart = (item: Omit<CartItem, 'quantity'>) => {

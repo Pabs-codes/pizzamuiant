@@ -2,7 +2,6 @@
 import React from 'react';
 import './BodyTwo.css';
 import Topimg from './OtherMedia/banner_720x360_plus_pannacotta (1).png';
-import ShoppingCart from './ShopingCart';
 import { CartProvider, useCart } from './CartContext';
 
 const MenuItem: React.FC<{ name: string; description: string; price: string }> = ({ name, description, price }) => {
@@ -35,11 +34,11 @@ const BodyTwo = () => {
           <MenuItem name="Red Curry Pan" description="Fried chicken breast fillet, lemongrass, ginger, coconut milk, in spicy curry sauce, with rice" price="€12.90" />
           {/* Add more menu items as needed */}
         </div>
-        <div className="right-panel">
+        {/* <div className="right-panel">
           <div className='right-card'>
             <ShoppingCart />
           </div>
-        </div>
+        </div> */}
       </div>
     </CartProvider>
   );
