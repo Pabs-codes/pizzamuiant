@@ -1,4 +1,5 @@
 // ShoppingCart.tsx
+import React from 'react';
 import { useCart } from './CartContext';
 import './BodyTwo.css';
 
@@ -6,7 +7,7 @@ const ShoppingCart = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
 
   return (
-<div className="shopping-cart">
+<div className="shopping-cart sticky-cart">
           <header className="cart-header">
         <i className="header-icon">📱</i>
         <div className="header-title">

@@ -12,10 +12,12 @@ function App() {
 
   return (
     <>
-      <MenuAppBar />
-      <Caroucsell />
-      <NavBar setActiveIndex={setActiveIndex} activeIndex={activeIndex}/>
-      <SwitchedBody index={activeIndex} />
+    <MenuAppBar/>
+    <Caroucsell/>
+  
+
+    <NavBar activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+    <SwitchedBody index={activeIndex}/>
     </>
   )
 }
